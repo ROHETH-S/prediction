@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Income Tax Inspector Salary Progression</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#172033;--muted:#5e687a;--line:#dfe4ee;--blue:#2157ff;--green:#047857;--orange:#c2410c;--red:#b91c1c;--shadow:0 12px 30px rgba(23,32,51,.08)}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}header{padding:32px 20px 20px;text-align:center}h1{margin:0;font-size:clamp(26px,4vw,44px);letter-spacing:-.04em}.subtitle{max-width:1040px;margin:12px auto 0;color:var(--muted);font-size:15px}main{width:min(1500px,calc(100% - 32px));margin:0 auto 40px}.assumptions,.case{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow);margin-bottom:24px}.assumptions h2,.case h2{margin:0 0 12px;font-size:21px;letter-spacing:-.02em}.assumption-grid,.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.summary-grid{margin-bottom:14px}.item,.summary-card{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fbfcff}.label{font-size:12px;color:var(--muted);margin-bottom:4px}.value{font-weight:700;font-size:15px}.summary-card strong{display:block;font-size:22px;margin-top:4px}.case-a{border-top:6px solid var(--green)}.case-b{border-top:6px solid var(--orange)}.note{margin:12px 0 0;color:var(--muted);font-size:13px}.warning{color:var(--red);font-weight:700}.formula-box{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.formula-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfcff}.formula-card code{display:block;white-space:pre-wrap;font-size:13px;color:#1c2b46}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;min-width:1650px;font-size:13px}th{position:sticky;top:0;background:#eef3ff;color:#1c2b46;text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:10px;border-bottom:1px solid #eef1f6;white-space:nowrap}tbody tr:hover{background:#fafcff}.money{font-variant-numeric:tabular-nums;text-align:right}.event{font-weight:700;color:var(--blue)}.footer-note{color:var(--muted);font-size:13px;text-align:center;margin:24px 0 0}@media(max-width:900px){.assumption-grid,.summary-grid,.formula-box{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.assumption-grid,.summary-grid,.formula-box{grid-template-columns:1fr}header{padding-top:22px}}@media print{body{background:#fff}main{width:100%}.case,.assumptions{box-shadow:none;page-break-inside:avoid}th{position:static}}
+</style>
+</head>
+<body>
+<header>
+<h1>Income Tax Inspector Salary Progression</h1>
+<p class="subtitle">Projection for joining as Income Tax Inspector in 2028 at age 26, Chennai posting, with two separate fitment cases: 1.80x and 2.20x. HRA is shown separately.</p>
+</header>
+<main>
+<section class="assumptions">
+<h2>Assumptions</h2>
+<div class="assumption-grid">
+<div class="item"><div class="label">Joining</div><div class="value">2028, age 26</div></div>
+<div class="item"><div class="label">City / HRA</div><div class="value">Chennai, X-city HRA</div></div>
+<div class="item"><div class="label">HRA rates used</div><div class="value">24%, 27%, 30%</div></div>
+<div class="item"><div class="label">DA increase</div><div class="value">2.5% every 6 months</div></div>
+<div class="item"><div class="label">Annual increment</div><div class="value">3% basic per year</div></div>
+<div class="item"><div class="label">Pay Commissions</div><div class="value">8th: 2026, 9th: 2036, 10th: 2046, 11th: 2056</div></div>
+<div class="item"><div class="label">Promotion path</div><div class="value">ITI → ITO → ACIT → DCIT → JCIT</div></div>
+<div class="item"><div class="label">PF / EPF</div><div class="value">No separate PF; NPS is used</div></div>
+</div>
+<div class="formula-box">
+<div class="formula-card"><div class="label">Gross formula</div><code>Gross / mo = Basic + DA + HRA + Transport Allowance</code></div>
+<div class="formula-card"><div class="label">In-hand formula</div><code>In-hand / mo = Gross - Employee NPS - Income Tax</code></div>
+</div>
+<p class="note">Employee NPS is deducted from your salary. Government NPS is not deducted from your salary; it is shown separately only for CTC calculation. CGHS, CGEGIS, and Professional Tax are removed.</p>
+</section>
+<section class="case case-a"><h2>Case A — 1.80x fitment factor at every Pay Commission</h2><div class="summary-grid" id="summary18"></div><div class="table-wrap"><table id="table18"></table></div></section>
+<section class="case case-b"><h2>Case B — 2.20x fitment factor at every Pay Commission</h2><div class="summary-grid" id="summary24"></div><div class="table-wrap"><table id="table24"></table></div><p class="note"><span class="warning">Note:</span> The 2.20x case becomes very large by retirement because the same high fitment is repeated in 2036, 2046, and 2056. Treat it as an aggressive upper-case projection.</p></section>
+<section class="assumptions">
+<h2>Column division</h2>
+<div class="assumption-grid">
+<div class="item"><div class="label">Earnings columns</div><div class="value">Basic, DA, HRA, Transport, Gross</div></div>
+<div class="item"><div class="label">Salary deductions</div><div class="value">Employee NPS and Income Tax</div></div>
+<div class="item"><div class="label">Final salary</div><div class="value">In-hand / mo</div></div>
+<div class="item"><div class="label">CTC columns</div><div class="value">Gross/year, Govt NPS/year, Total CTC/year</div></div>
+</div>
+</section>
+<p class="footer-note">Amounts are future nominal rupees. Gross salary/year = Gross/month × 12. Total CTC/year = Gross salary/year + Government NPS/year.</p>
+</main>
+<script>
+const baseLevels={7:44900,8:47600,10:56100,11:67700,12:78800};
+const startYear=2028,endYear=2062,cpcYears=[2036,2046,2056];
+const columns=[['year','Year'],['age','Age'],['post','Post'],['daPct','DA %'],['basic','Basic / mo'],['da','DA / mo'],['hra','HRA / mo'],['ta','Transport / mo'],['gross','Gross / mo'],['employeeNps','Employee NPS / mo'],['tax','Income Tax / mo'],['inhand','In-hand / mo'],['govtNps','Govt NPS / mo'],['grossYear','Gross Salary / yr'],['employeeNpsYear','Employee NPS / yr'],['govtNpsYear','Govt NPS / yr'],['totalCtcYear','Total CTC / yr'],['event','Event']];
+function postForYear(year){if(year>=2060)return{name:'JCIT',level:12};if(year>=2055)return{name:'DCIT',level:11};if(year>=2049)return{name:'ACIT',level:10};if(year>=2036)return{name:'ITO',level:8};return{name:'ITI',level:7}}
+function lastCpcYear(year){if(year>=2056)return 2056;if(year>=2046)return 2046;if(year>=2036)return 2036;return 2026}
+function daPercent(year){return(year-lastCpcYear(year))*5}
+function hraRate(daPct){if(daPct>=50)return .30;if(daPct>=25)return .27;return .24}
+function cpcMultiplierTillYear(year,fitment){let count=1;if(year>=2036)count++;if(year>=2046)count++;if(year>=2056)count++;return Math.pow(fitment,count)}
+function transportAllowance(level,daPct,fitment,year){const baseTa=level<=8?3600:7200;return baseTa*cpcMultiplierTillYear(year,fitment)*(1+daPct/100)}
+function taxMonthly(grossMonthly){const standardDeduction=75000;const taxable=Math.max(0,grossMonthly*12-standardDeduction);const slabs=[[400000,0],[400000,.05],[400000,.10],[400000,.15],[400000,.20],[400000,.25],[Infinity,.30]];let remaining=taxable,tax=0;for(const[width,rate]of slabs){if(remaining<=0)break;const part=Math.min(remaining,width);tax+=part*rate;remaining-=part}let surcharge=0;if(taxable>50000000)surcharge=tax*.25;else if(taxable>20000000)surcharge=tax*.25;else if(taxable>10000000)surcharge=tax*.15;else if(taxable>5000000)surcharge=tax*.10;const cess=(tax+surcharge)*.04;return(tax+surcharge+cess)/12}
+function formatMoney(amount){const lakhs=amount/100000;if(lakhs>=100)return`₹${(lakhs/100).toFixed(2)}Cr`;return`₹${lakhs.toFixed(2)}L`}
+function buildRows(fitment){const rows=[];let basic=baseLevels[7]*fitment;let prevLevel=7;for(let year=startYear;year<=endYear;year++){const age=26+(year-2028);const post=postForYear(year);const daPct=daPercent(year);if(year>startYear){basic*=1.03;if(cpcYears.includes(year))basic*=fitment;if(post.level!==prevLevel)basic*=baseLevels[post.level]/baseLevels[prevLevel]}const da=basic*daPct/100;const hra=basic*hraRate(daPct);const ta=transportAllowance(post.level,daPct,fitment,year);const gross=basic+da+hra+ta;const employeeNps=(basic+da)*.10;const govtNps=(basic+da)*.14;const tax=taxMonthly(gross);const inhand=gross-employeeNps-tax;let event='-';if(year===2028)event='Join as ITI';if(year===2036)event='9th CPC + Promotion to ITO';if(year===2046)event='10th CPC';if(year===2049)event='Promotion to ACIT';if(year===2055)event='Promotion to DCIT';if(year===2056)event='11th CPC';if(year===2060)event='Promotion to JCIT';rows.push({year,age,post:`${post.name} L${post.level}`,daPct:`${daPct}%`,basic,da,hra,ta,gross,employeeNps,tax,inhand,govtNps,grossYear:gross*12,employeeNpsYear:employeeNps*12,govtNpsYear:govtNps*12,totalCtcYear:gross*12+govtNps*12,event});prevLevel=post.level}return rows}
+function renderSummary(containerId,rows){const start=rows[0],end=rows[rows.length-1];const cards=[['Joining gross/month',formatMoney(start.gross)],['Joining in-hand/month',formatMoney(start.inhand)],['Joining total CTC/year',formatMoney(start.totalCtcYear)],['Retirement gross/month',formatMoney(end.gross)],['Retirement in-hand/month',formatMoney(end.inhand)],['Retirement total CTC/year',formatMoney(end.totalCtcYear)]];document.getElementById(containerId).innerHTML=cards.map(([label,value])=>`<div class="summary-card"><div class="label">${label}</div><strong>${value}</strong></div>`).join('')}
+function renderTable(tableId,rows){const table=document.getElementById(tableId);table.innerHTML='';const thead=document.createElement('thead');const headRow=document.createElement('tr');columns.forEach(([,label])=>{const th=document.createElement('th');th.textContent=label;headRow.appendChild(th)});thead.appendChild(headRow);table.appendChild(thead);const tbody=document.createElement('tbody');rows.forEach(row=>{const tr=document.createElement('tr');columns.forEach(([key])=>{const td=document.createElement('td');const value=row[key];const isMoney=typeof value==='number'&&key!=='year'&&key!=='age';td.textContent=isMoney?formatMoney(value):value;if(isMoney)td.className='money';if(key==='event'&&value!=='-')td.className='event';tr.appendChild(td)});tbody.appendChild(tr)});table.appendChild(tbody)}
+const rows18=buildRows(1.8),rows24=buildRows(2.2);renderSummary('summary18',rows18);renderSummary('summary24',rows24);renderTable('table18',rows18);renderTable('table24',rows24);
+</script>
+</body>
+</html>
